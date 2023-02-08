@@ -8,7 +8,6 @@ class Address extends Component {
         };
     }
     render() {
-        var address;
         if (this.props.isIPv4) {
             fetch('https://api.ipify.org?format=json')
                 .then(response => response.json())
